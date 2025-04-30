@@ -30,7 +30,6 @@ This project is a command-line port scanner that allows users to:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/pulasthi-ranabahu/Hack-Secure-Internship
-   cd python-port-scanner
    ```
 
 2. **(Optional) Create a virtual environment:**
