@@ -1,57 +1,67 @@
-Python Port Scanner
+# Python Port Scanner
+
 A fast, multi-threaded Python tool to scan open ports on a target IP address and within a specified port range. Developed as part of the Hack Secure Cybersecurity Internship (Red Teaming, April 2025 Batch).
 
-🚩 Overview
+---
+
+## 🚩 Overview
+
 This project is a command-line port scanner that allows users to:
 
-Scan a target host for open TCP ports.
+- Scan a target host for open TCP ports.
+- Select from common port ranges or specify a custom range.
+- Get real-time feedback on open ports.
+- Benefit from optimized multi-threading for faster scanning.
 
-Select from common port ranges or specify a custom range.
+---
 
-Get real-time feedback on open ports.
+## ✨ Features
 
-Benefit from optimized multi-threading for faster scanning.
+- **Input validation:** Ensures only valid IP addresses and port ranges are accepted.
+- **Port range options:** Choose from well-known, registered, dynamic/private, all, or custom port ranges.
+- **Prioritizes common ports:** Scans the most frequently used ports first for quicker results.
+- **Multi-threaded scanning:** Utilizes threading for efficient and fast port scanning, even over large ranges.
+- **User-friendly output:** Displays open ports as they are found and summarizes results at the end.
 
-✨ Features
-Input validation: Ensures only valid IP addresses and port ranges are accepted.
+---
 
-Port range options: Choose from well-known, registered, dynamic/private, all, or custom port ranges.
+## 🛠️ Installation
 
-Prioritizes common ports: Scans the most frequently used ports first for quicker results.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/pulasthi-ranabahu/Hack-Secure-Internship
+   cd python-port-scanner
+   ```
 
-Multi-threaded scanning: Utilizes threading for efficient and fast port scanning, even over large ranges.
+2. **(Optional) Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-User-friendly output: Displays open ports as they are found and summarizes results at the end.
+3. **No external dependencies required.**  
+   The script uses only Python’s standard library.
 
-🛠️ Installation
-Clone the repository:
+---
 
-bash
-git clone https://github.com/yourusername/python-port-scanner.git
-cd python-port-scanner
-(Optional) Create a virtual environment:
+## ▶️ Usage
 
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-No external dependencies required.
-The script uses only Python’s standard library.
-
-▶️ Usage
 Run the script using Python 3:
 
-bash
+```bash
 python HackSecure_PulasthiRanabahu_EHP.py
-Follow the prompts:
+```
 
-Enter the target IP address (e.g., 192.168.1.1).
+**Follow the prompts:**
+- Enter the target IP address (e.g., 192.168.1.1).
+- Select a port range option (well-known, registered, dynamic/private, all, or custom).
+- The scanner will display open ports as they are detected and provide a summary at the end.
 
-Select a port range option (well-known, registered, dynamic/private, all, or custom).
+---
 
-The scanner will display open ports as they are detected and provide a summary at the end.
+## 📋 Example Output
 
-📋 Example Output
-text
+```
 ============================================================
 PYTHON PORT SCANNER
 ============================================================
@@ -81,17 +91,31 @@ Scan completed at: 2025-04-24 01:11:04
 Found 2 open ports on 45.33.32.156:
 Port 22 is open
 Port 80 is open
-📦 Project Structure
-text
+```
+
+---
+
+## 📦 Project Structure
+
+```
 python-port-scanner/
 ├── HackSecure_PulasthiRanabahu_EHP.py
 ├── README.md
-📚 Internship Context
+```
+
+---
+
+## 📚 Internship Context
+
 This project fulfills the "Basic Port Scanner" requirement for the Hack Secure Cybersecurity Internship (Red Teaming). The goal is to demonstrate practical skills in network reconnaissance and Python scripting.
 
-🤝 Acknowledgements
-Developed by R.A.M.P Ranabahu for the Hack Secure Internship, April 2025 Batch.
+---
 
-Thanks to the Hack Secure team for guidance and support.
+## 🤝 Acknowledgements
 
-Let’s make the digital world safer, one scan at a time!
+- Developed by R.A.M.P Ranabahu for the Hack Secure Internship, April 2025 Batch.
+- Thanks to the Hack Secure team for guidance and support.
+
+---
+
+**Let’s make the digital world safer, one scan at a time!**
